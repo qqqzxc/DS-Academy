@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>DS Academy</title>
+	<style>
+	
+		input::-moz-placeholder {
+			color: #D0C9D6;
+		}
+	
+		input::-webkit-input-placeholder {
+			color:  #D0C9D6;
+		}
+
+		input:-ms-input-placeholder {
+			color:  #D0C9D6;
+		}
+		input::-ms-input-placeholder {
+			color:  #D0C9D6;
+		}
+		
+		input::placeholder {
+			color:  #D0C9D6;
+		}
+	</style>
+</head>
+
+<body class="page-body">
+
+	<main class="container">
+
+		<div>
+			<h2>Задать вопрос</h2>
+			<form action="https://60376bfd5435040017722533.mockapi.io/formRej" method="POST" class="container-list">
+				<input type="text" id="name" name="name"  placeholder="Фамилия Имя Отчество *" pattern="[А-Яа-я]*?\s[А-Яа-я]*?\s[А-Яа-я]*">
+				<input type="tel" id="phone" name="phone"  placeholder="Телефон *" autofocus pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required title="+7">
+				<input type="email" id="email" name="email"  placeholder="Email">
+				<input type="submit" class="button" value="Отправить запрос">
+			</form>
+		</div>
+
+	</main>
+
+</body>
+
+</html>
